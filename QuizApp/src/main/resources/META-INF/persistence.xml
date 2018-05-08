@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.1sun.com/xml/ns/persistence" version="2.0">
+
+<persistence-unit name="KwetterPU">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <properties>
+        <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/kwetter"/>
+        <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+        <property name="javax.persistence.jdbc.username" value="root"/>
+        <property name="javax.persistence.jdbc.password" value="admin"/>
+        <property name="hibernate.archive.autodetection" value="class"/>
+        <property name="hbm2ddl.auto" value="update"/>
+        <property name="javax.persistence.schema-generation.database.action" value="drop-and-create" />
+    </properties>
+</persistence-unit>
+</persistence>
