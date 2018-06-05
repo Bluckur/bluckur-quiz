@@ -52,7 +52,7 @@ public class QuizFacadeREST {
         qs.addQuestion();
     }
 
-    @POST
+    @GET
     @Path("isAnswerCorrect/{questionid}/{answer}/{publickey}")
     @Produces(MediaType.APPLICATION_JSON)
     public String isAnswerCorrect(@PathParam("questionid")int questionId, @PathParam("answer")String answer, @PathParam("publickey")String publicKey){
